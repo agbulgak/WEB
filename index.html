@@ -9,34 +9,15 @@
 
             <input type="submit" value="Загрузить">
           </form>
-          <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  %( function() {
-    %( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 100,
-      values: [ 75, 300 ],
-      slide: function( event, ui ) {
-        %( "#amount" ).val( "%" + ui.values[ 0 ] + " - %" + ui.values[ 1 ] );
-      }
-    });
-    %( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - $" + %( "#slider-range" ).slider( "values", 1 ) );
-  } );
-  </script>
-</head>
-<body>
- 
-<p>
-  <label for="amount">Price range:</label>
-  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-</p>
- 
-<div id="slider-range"></div>
+          <input type="range" step="1" min="0" max="100" list="rangeList" onchange="document.getElementById('rangeValue').innerHTML = this.value;">
+<datalist id="rangeList">
+<option value="0" label="0">
+<option value="25" label="25">
+  <option value="50" label="50">
+    <option value="75" label="75">
+<option value="100" label="100">
+</datalist>
+<span id="rangeValue">1</span>
 </center>
            </body>
   
