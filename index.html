@@ -2,11 +2,20 @@
           <body>
              <h1 align="center"><strong>сюда нужно загрузить своё резюме</strong></h1>
              <h2 align="center"><strong>Моё резюме!</strong></h2>
-             <div align="center" class="file_upload">
-             <button type="button">Выбрать</button>
-             <div>Файл не выбран</div>
-             <input type="file">
-             </div>
+             <style>
+.Absolute-Center 
+{
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+</style>
+<form enctype="multipart/form-data">
+            <p>Выберите ваш резюме:</p>
+            <input type="file" name="резюме">
+
+            <input type="submit" value="Загрузить">
+        </form>
            </body>
   
       </head>
