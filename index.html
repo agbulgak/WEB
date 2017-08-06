@@ -1,32 +1,68 @@
-<title>сайт для загрузки аниме</title>
+<title>Определение качества резюме</title>
           <body>
-             <h1 align="center"><strong>сюда нужно загрузить своё резюме</strong></h1>
-             <h2 align="center"><strong>Моё резюме!</strong></h2>
+             <h1 align="center"><strong>Определение качества резюме</strong></h1>
+             <!-- <h2 align="center"><strong>Моё резюме!</strong></h2> -->
             <center>
              <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
-            <p>Выберите ваш резюме:</p>
+            <p>Прикрепите файл с резюме (в формате doc, docx, pdf):</p>
             <input type="file" name="резюме">
 
             <input type="submit" value="Загрузить">
           </form>
-          <input type="range" step="1" min="0" max="100" list="rangeList" onchange="document.getElementById('rangeValue').innerHTML = this.value;">
+          <h1><input type="range" step="1" min="0" max="100" list="rangeList" onchange="document.getElementById('rangeValue').innerHTML = this.value;">
  <datalist id="rangeList">
  <option value="0" label="0">
+   <option value="5" label="5">
+     <option value="10" label="10">
+ <option value="15" label="15">
+<option value="20" label="20">
  <option value="25" label="25">
+ <option value="30" label="30">
+ <option value="35" label="35">
+    <option value="40" label="40">
+<option value="45" label="45">
  <option value="50" label="50">
+ <option value="55" label="55">
+   <option value="60" label="60">
+ <option value="65" label="65">
+ <option value="70" label="70">
  <option value="75" label="75">
+    <option value="80" label="80">
+ <option value="85" label="85">
+    <option value="90" label="90">
+ <option value="95" label="95">
  <option value="100" label="100">
  </datalist>
  <span id="rangeValue">1</span>
-  <input type="range" step="1" min="0" max="100" list="rangeList_" onchange="document.getElementById('rangeValue_').innerHTML = this.value;">
+ </h1>
+
+  <h1><input type="range" step="1" min="0" max="100" list="rangeList_" onchange="document.getElementById('rangeValue_').innerHTML = this.value;">
  <datalist id="rangeList_">
  <option value="0" label="0">
+   <option value="5" label="5">
+     <option value="10" label="10">
+ <option value="15" label="15">
+<option value="20" label="20">
  <option value="25" label="25">
+ <option value="30" label="30">
+ <option value="35" label="35">
+    <option value="40" label="40">
+<option value="45" label="45">
  <option value="50" label="50">
+ <option value="55" label="55">
+   <option value="60" label="60">
+ <option value="65" label="65">
+ <option value="70" label="70">
  <option value="75" label="75">
+    <option value="80" label="80">
+ <option value="85" label="85">
+    <option value="90" label="90">
+ <option value="95" label="95">
  <option value="100" label="100">
  </datalist>
  <span id="rangeValue_">1</span>
+ </h1>
+
            </body>
   
       </head>
